@@ -1,6 +1,12 @@
 # Covid_deaths_vaccinations_db
-
-***Tableau Project Links***
+<br />
+<br />– Merged multiple tables & Data Exploration of covid dataset and Performed Data Analysis using Microsoft SQL Server.
+<br />– Executed Joins, Views, Sub-queries, and Advanced queries
+<br />– Transferred the data using MS Excel and organized different charts into an Interactive Dashboard using Tableau Public.
+<br />– Organised different dashboard mappings using Mapbox and country-wise forecasts of infected and vaccinated population.
+<br />– Tools and technologies used: Microsoft SQL Server, Tableau Public and MS Excel
+<br />
+<br />***Tableau Project Links***
 
 https://public.tableau.com/app/profile/abhishek.sharma7411/viz/Covid_Tableau_Visualization_16692041920750/Dashboard1
 
