@@ -17,7 +17,7 @@ Queries used FOR TABLEAU PROJECT
 
 */
 
---1--
+--TABLE 1--
 Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
 From Covid..CovidDeaths
 --Where location like 'India'
@@ -25,7 +25,7 @@ where continent is not null
 --Group By date
 order by 1,2
 
---2--
+--TABLE 2--
 Select location, SUM(cast(new_deaths as int)) as TotalDeathCount
 From Covid..CovidDeaths
 --Where location like 'India'
@@ -36,7 +36,7 @@ order by TotalDeathCount desc
 
 -- looking at total cases VS population
 -- shows what % population of India got covid
---3--
+--TABLE 3--
 Select location, Max(total_cases) as MaxInfectedCount, population, Max(total_cases/population)*100 as PercentInfectedPopulation
 from Covid..CovidDeaths
 Where Continent is not null
@@ -45,7 +45,7 @@ Group by location, population
 Order by PercentInfectedPopulation DESC
 
 -- MAX INFECTED POPULATION
---4--
+--TABLE 4--
 Select location,date, Max(total_cases) as MaxInfectedCount, population, Max(total_cases/population)*100 as PercentInfectedPopulation
 from Covid..CovidDeaths
 Where Continent is not null
@@ -56,7 +56,7 @@ Order by PercentInfectedPopulation DESC
 /*
 SOME ADVANCED ONES
 */
---5--
+-- TABLE 5 --
 --WITH CTE (Common Table Expression)  NOTE SYNTAX...!!
 -- CTE is a temporary(one-time)named result set that we can reference within a select, insert, update, delete, create view, merge statements
 -- each CTE is like a named query that is stored in a virtual table (CTE) to be referenced later in a main query. 
